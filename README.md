@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Web Designer Portfolio</title>
+    <style>
+        /* CSS Settings */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        
+        header { background: #2c3e50; color: #fff; padding: 60px 20px; text-align: center; }
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        header p { font-size: 1.2rem; color: #bdc3c7; }
+
+        .container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+        
+        .section { background: #fff; padding: 30px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h2 { border-bottom: 2px solid #3498db; display: inline-block; margin-bottom: 20px; padding-bottom: 5px; color: #2c3e50; }
+
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; text-align: center; }
+        .skill-item { background: #3498db; color: #fff; padding: 10px; border-radius: 5px; font-weight: bold; }
+
+        .contact-btn { display: inline-block; background: #e74c3c; color: #fff; padding: 12px 25px; text-decoration: none; border-radius: 5px; margin-top: 20px; transition: 0.3s; }
+        .contact-btn:hover { background: #c0392b; }
+
+        footer { text-align: center; padding: 20px; color: #7f8c8d; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>آپ کا نام یہاں لکھیں</h1>
+    <p>پروفیشنل ویب ڈیزائنر اور ڈویلپر</p>
+</header>
+
+<div class="container">
+    <div class="section">
+        <h2>میرے بارے میں</h2>
+        <p>میں ایک تجربہ کار ویب ڈیزائنر ہوں جو خوبصورت، جدید اور تیز رفتار ویب سائٹس بنانے میں مہارت رکھتا ہوں۔ میرا مقصد آپ کے بزنس کو ڈیجیٹل دنیا میں ایک منفرد پہچان دلانا ہے۔</p>
+    </div>
+
+    <div class="section">
+        <h2>میری مہارتیں (Skills)</h2>
+        <div class="skills-grid">
+            <div class="skill-item">HTML5 / CSS3</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">UI/UX Design</div>
+            <div class="skill-item">WordPress</div>
+            <div class="skill-item">Responsive Design</div>
+            <div class="skill-item">Bootstrap</div>
+        </div>
+    </div>
+
+    <div class="section" style="text-align: center;">
+        <h2>کیا آپ کو ایک شاندار ویب سائٹ چاہیے؟</h2>
+        <p>آج ہی مجھ سے رابطہ کریں اور اپنے پروجیکٹ کے بارے میں بات کریں۔</p>
+        <a href="mailto:your-email@example.com" class="contact-btn">مجھ سے رابطہ کریں</a>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 تمام حقوق محفوظ ہیں۔
+</footer>
+
+</body>
+</html>
