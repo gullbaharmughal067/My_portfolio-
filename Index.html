@@ -1,66 +1,132 @@
 <!DOCTYPE html>
-<html lang="ur">
+<html lang="ur" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Web Designer Portfolio</title>
+    <title>Gulbahar - Professional Web & Interior Designer</title>
     <style>
-        /* CSS Settings */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        /* Modern Design System */
+        :root {
+            --primary-color: #1a2a6c;
+            --secondary-color: #b21f1f;
+            --accent-color: #fdbb2d;
+            --text-light: #ffffff;
+            --bg-light: #f8f9fa;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #333; line-height: 1.8; text-align: right; }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            color: var(--text-light);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 { font-size: 3.5rem; margin-bottom: 10px; color: var(--accent-color); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        header p { font-size: 1.5rem; max-width: 700px; }
+
+        .container { max-width: 1100px; margin: -50px auto 50px; padding: 0 20px; position: relative; }
+
+        /* Card Sections */
+        .card { 
+            background: #fff; 
+            padding: 40px; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+            margin-bottom: 30px;
+        }
+
+        h2 { color: var(--primary-color); border-right: 5px solid var(--secondary-color); padding-right: 15px; margin-bottom: 25px; }
+
+        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .service-box { background: #f1f3f5; padding: 20px; border-radius: 10px; border-top: 4px solid var(--accent-color); }
+
+        /* Contact Details */
+        .contact-info { display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-around; margin-top: 20px; }
+        .info-item { text-align: center; background: var(--primary-color); color: white; padding: 20px; border-radius: 10px; flex: 1; min-width: 250px; }
         
-        header { background: #2c3e50; color: #fff; padding: 60px 20px; text-align: center; }
-        header h1 { font-size: 2.5rem; margin-bottom: 10px; }
-        header p { font-size: 1.2rem; color: #bdc3c7; }
+        .btn {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            margin-top: 15px;
+        }
+        .btn:hover { transform: scale(1.05); background: #961919; }
 
-        .container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
-        
-        .section { background: #fff; padding: 30px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h2 { border-bottom: 2px solid #3498db; display: inline-block; margin-bottom: 20px; padding-bottom: 5px; color: #2c3e50; }
+        footer { text-align: center; padding: 30px; color: #777; background: #eee; }
 
-        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; text-align: center; }
-        .skill-item { background: #3498db; color: #fff; padding: 10px; border-radius: 5px; font-weight: bold; }
-
-        .contact-btn { display: inline-block; background: #e74c3c; color: #fff; padding: 12px 25px; text-decoration: none; border-radius: 5px; margin-top: 20px; transition: 0.3s; }
-        .contact-btn:hover { background: #c0392b; }
-
-        footer { text-align: center; padding: 20px; color: #7f8c8d; font-size: 0.9rem; }
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.2rem; }
+            header p { font-size: 1.1rem; }
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>آپ کا نام یہاں لکھیںgulbaharmughal</h1>
-    <p>پروفیشنل ویب ڈیزائنر اور ڈویلپر</p>
+    <h1>گل بہار (Gulbahar)</h1>
+    <p>پروفیشنل ویب ڈیزائنر اور ہوم انٹیریئر ڈیزائن ایکسپرٹ</p>
 </header>
 
 <div class="container">
-    <div class="section">
-        <h2>میرے بارے میں</h2>
-        <p>میں ایک تجربہ کار ویب ڈیزائنر ہوں جو خوبصورت، جدید اور تیز رفتار ویب سائٹس بنانے میں مہارت رکھتا ہوں۔ میرا مقصد آپ کے بزنس کو ڈیجیٹل دنیا میں ایک منفرد پہچان دلانا ہے۔</p>
+    <div class="card">
+        <h2>تعارف</h2>
+        <p>میرا نام گل بہار ہے اور میں ڈیجیٹل ویب ڈیزائننگ کے ساتھ ساتھ انٹیریئر ڈیزائننگ میں مہارت رکھتا ہوں۔ میں آپ کے گھر اور آپ کے کاروبار دونوں کو ایک خوبصورت اور جدید شکل دینے کی صلاحیت رکھتا ہوں۔ میرا مقصد معیار اور خوبصورتی کا بہترین امتزاج فراہم کرنا ہے۔</p>
     </div>
 
-    <div class="section">
-        <h2>میری مہارتیں (Skills)</h2>
-        <div class="skills-grid">
-            <div class="skill-item">HTML5 / CSS3</div>
-            <div class="skill-item">JavaScript</div>
-            <div class="skill-item">UI/UX Design</div>
-            <div class="skill-item">WordPress</div>
-            <div class="skill-item">Responsive Design</div>
-            <div class="skill-item">Bootstrap</div>
+    <div class="card">
+        <h2>میری خدمات</h2>
+        <div class="services">
+            <div class="service-box">
+                <h3>پروفیشنل ویب ڈیزائننگ</h3>
+                <p>جدید، تیز رفتار اور موبائل فرینڈلی ویب سائٹس کی تیاری۔</p>
+            </div>
+            <div class="service-box">
+                <h3>ہوم انٹیریئر ڈیزائننگ</h3>
+                <p>آپ کے گھر کے اندرونی حصوں کو جدید اور دیدہ زیب بنانا۔</p>
+            </div>
+            <div class="service-box">
+                <h3>PK & Home Interior</h3>
+                <p>آپ کے فیس بک پیج کے ذریعے بہترین ڈیزائننگ آئیڈیاز کی فراہمی۔</p>
+            </div>
         </div>
     </div>
 
-    <div class="section" style="text-align: center;">
-        <h2>کیا آپ کو ایک شاندار ویب سائٹ چاہیے؟</h2>
-        <p>آج ہی مجھ سے رابطہ کریں اور اپنے پروجیکٹ کے بارے میں بات کریں۔</p>
-        <a href="mailto:your-email@example.com" class="contact-btn">مجھ سے رابطہ کریں03361009499</a>
+    <div class="card">
+        <h2>رابطہ کریں</h2>
+        <div class="contact-info">
+            <div class="info-item">
+                <h3>فون نمبر</h3>
+                <p>0336 100 9499</p>
+            </div>
+            <div class="info-item">
+                <h3>فیس بک پیج</h3>
+                <p>PK & Home Interior Designer</p>
+                <a href="https://www.facebook.com" target="_blank" class="btn">پیج وزٹ کریں</a>
+            </div>
+        </div>
     </div>
 </div>
 
 <footer>
-    &copy; 2026 تمام حقوق محفوظ ہیں۔
+    <p>&copy; 2026 گل بہار پورٹ فولیو - تمام حقوق محفوظ ہیں۔</p>
 </footer>
 
 </body>
